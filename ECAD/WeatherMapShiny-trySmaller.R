@@ -19,7 +19,7 @@ library(shinydashboard)
 r_colors <- rgb(t(col2rgb(colors()) / 255))
 names(r_colors) <- colors()
 
-load("../SelStations.rda")
+load("SelStations.rda")
 load("PreCalcData_trySmaller_woX.rda")
 hotpoints = Selhotpoints
 #hotpoints = Selhotpoints[-(which(is.na(hotpoints$STANAME))), ] # Deletes all NA rows
@@ -35,7 +35,9 @@ rand = sample.int(411, 1)  # Replaces STAID (the sample)
 LevCols = rev(heat.colors(5))[cut(hotpoints$trnd,breaks=quantile(hotpoints$trnd,c(seq(0,1,length=6)),na.rm=TRUE),labels=FALSE)] 
 
 
-ui <- fluidPage(
+ui <- navbarPage("Weather",
+                 tabPanel("Map",
+  fluidPage(
   dashboardBody(
     tags$head(tags$style(HTML('
                               .modal.in .modal-dialog{
@@ -62,7 +64,7 @@ ui <- fluidPage(
   #fluidRow(verbatimTextOutput("Click_text"))
   dygraphOutput("dygraph"),
   p()
-)
+)), tabPanel("Empty")) # The content for the second panel can be entered right after "Summary"
 
 server <- function(input, output, session) {
   
