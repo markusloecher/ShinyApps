@@ -1,0 +1,3 @@
+### ARF Conditional Density Estimation
+
+When we use Adversarial Random Forests (ARF) for density estimation, we often take the resulting ‘boxes’ for granted, but how closely do these piece-wise estimates actually mirror the underlying truth? I put ARF to the test against a known Data Generating Process, specifically examining how the quality of conditional density estimation fluctuates when faced with different distributional geometries—from simple uniforms to complex power laws. The results suggest that while the forest might get the ‘population count’ right, it can be remarkably deceptive when it comes to the actual shape of the data?
