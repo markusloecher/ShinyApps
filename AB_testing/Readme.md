@@ -2,6 +2,8 @@
 
 A Shiny app to compare Type I error and Power of different 2-proportion tests under realistic A/B conditions. Built because the "textbook" answer isn't always the best answer when data is messy.
 
+**Live demo**: [https://treeml.shinyapps.io/binomial_AB_testing/]
+
 ## Why this app?
 
 In real A/B tests we rarely have perfect binomial data. Day-of-week effects, low rates, and small samples break assumptions.

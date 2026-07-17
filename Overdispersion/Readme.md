@@ -1,5 +1,7 @@
 # Overdispersion: Beta-Binomial & Negative Binomial
 
+**Live demo**: [https://treeml.shinyapps.io/beta_binomial]
+
 ## The Core Problem
 
 Binomial and Poisson assume all trials have identical probability `p` or rate `λ`. Real data has heterogeneity: 

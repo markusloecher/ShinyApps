@@ -9,7 +9,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       h4("Common"),
-      numericInput("nsim", "Number of draws:", 5000, 100, 50000, 100),
+      #numericInput("nsim", "Number of draws:", 5000, 100, 50000, 100),
       radioButtons("bar_position", "Bar layout:",
                    choices = c("Overlaid" = "identity", "Side-by-side" = "dodge"),
                    selected = "identity", inline = TRUE),

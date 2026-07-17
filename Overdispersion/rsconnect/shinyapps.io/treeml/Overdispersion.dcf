@@ -1,0 +1,12 @@
+name: Overdispersion
+title: Overdispersion
+username: treeml
+account: treeml
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17619495
+bundleId: 12280674
+url: https://treeml.shinyapps.io/Overdispersion/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

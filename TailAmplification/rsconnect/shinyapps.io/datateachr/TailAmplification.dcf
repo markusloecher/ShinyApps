@@ -1,0 +1,13 @@
+name: TailAmplification
+title: TailAmplification
+username: datateachr
+account: datateachr
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17619425
+bundleId: 12280500
+url: https://datateachr.shinyapps.io/TailAmplification/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app_v0.R
